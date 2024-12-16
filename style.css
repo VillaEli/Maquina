@@ -1,0 +1,8 @@
+/* Estilo para el efecto de máquina de escribir */
+.maquina {
+    font-size: 36px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: nowrap;  /* Impide que el texto se rompa */
+    overflow: hidden;  /* Oculta texto que aún no se ha "escrito" */
+    border-right: 0.15em solid #3498db; /* El cursor de máquina de escribir */
+}

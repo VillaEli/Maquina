@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: 'Courier New', monospace; /* Estilo de máquina de escribir */
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrar el contenido en la pantalla */
+}
+
+#text-container {
+    font-size: 24px; /* Tamaño del texto */
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+    border-right: 2px solid #fff; /* Simula el cursor de la máquina de escribir */
+    padding-right: 10px; /* Espacio entre el texto y el "cursor" */
+    display: inline-block;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;  /* Necesario para asegurar que la página ocupe toda la altura */
+}
+
+/* Contenedor del video */
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* El video ocupa toda la altura de la pantalla */
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Hace que el video se adapte al ancho */
+    height: 100%; /* Hace que el video ocupe el 100% de la altura */
+    object-fit: cover; /* El video cubre toda el área sin distorsionar */
+}
+
+/* Capa oscurecedora */
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el video */
+}
+
+/* Estilo para el texto */
+#text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem; /* Tamaño del texto, puedes ajustarlo */
+    font-weight: bold;
+    text-align: center;
+    z-index: 2; /* Asegura que el texto esté por encima del video */
+    width: 80%; /* Opcional, para evitar que el texto se desborde */
+    max-width: 700px; /* Opcional, para limitar el ancho del texto */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+/* Capa oscurecedora */
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Aumentamos la opacidad a 0.8 */
+}
